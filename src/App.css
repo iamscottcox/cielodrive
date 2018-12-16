@@ -13,9 +13,16 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.logo {
+  height: 75vmin;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -100;
 }
 
 header {
@@ -24,6 +31,7 @@ header {
   justify-content: space-around;
   width: 100%;
   padding: 1em;
+  background: none;
 }
 
 header a {

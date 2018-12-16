@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Logo from './images/CieloDriveLogo.png'
 import "./App.css";
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
           <a href="https://twitter.com/CIELODRIVEUK">Twitter</a>
         </header>
         <section className="jumbotron">
+          <img className="logo" src={Logo} alt="The Cielo Drive heart logo"/>
           <h1>Cielo Drive</h1>
           <p>Coming Soon</p>
         </section>
