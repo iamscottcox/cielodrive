@@ -7,7 +7,7 @@ class App extends Component {
       <div className="App">
         <header>
           <a href="https://www.facebook.com/cielodriveuk">Facebook</a>
-          <a href="#">Instagram</a>
+          <a href="https://www.instagram.com/cielodrive_uk">Instagram</a>
           <a href="https://twitter.com/CIELODRIVEUK">Twitter</a>
         </header>
         <section className="jumbotron">
