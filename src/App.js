@@ -1,22 +1,52 @@
 import React, { Component } from "react";
-import Logo from './images/CieloDriveLogo.png'
-import "./App.css";
+import { createGlobalStyle } from "styled-components";
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faSpotify, faYoutube, faItunes } from '@fortawesome/free-brands-svg-icons'
+
+// components
+import { Header } from "./components/Header";
+import { Jumbotron } from "./components/Jumbotron";
+import { Music } from "./components/Music";
+import {Pictures} from "./components/Pictures";
+import {Feature} from "./components/Feature";
+
+library.add(faSpotify, faYoutube, faItunes);
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  @font-face {
+    font-family: Ailerons;
+    src: url('/public/fonts/Ailerons-Typeface.otf');
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Staatliches', sans-serif;
+  }
+ 
+`;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header>
-          <a href="https://www.facebook.com/cielodriveuk">Facebook</a>
-          <a href="https://www.instagram.com/cielodrive_uk">Instagram</a>
-          <a href="https://twitter.com/CIELODRIVEUK">Twitter</a>
-        </header>
-        <section className="jumbotron">
-          <img className="logo" src={Logo} alt="The Cielo Drive heart logo"/>
-          <h1>Cielo Drive</h1>
-          <p>Coming Soon</p>
-        </section>
-      </div>
+      <section className="App">
+        <GlobalStyle/>
+        <Header/>
+        <Jumbotron />
+        <Feature/>
+        {/*<div className="scroll-down-chevron">Down</div>*/}
+        <Music />
+        <Pictures/>
+      </section>
     );
   }
 }
