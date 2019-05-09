@@ -9,7 +9,7 @@ export const MusicWrapper = styled.ul`
   list-style: none;
   max-width: 300px;
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 1em 0 2em;
 `;
 
 export const Music = () => (
