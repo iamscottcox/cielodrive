@@ -8,7 +8,7 @@ import { faSpotify, faYoutube, faItunes } from '@fortawesome/free-brands-svg-ico
 import { Header } from "./components/Header";
 import { Jumbotron } from "./components/Jumbotron";
 import { Music } from "./components/Music";
-import {Pictures} from "./components/Pictures";
+// import {Pictures} from "./components/Pictures";
 import {Feature} from "./components/Feature";
 
 library.add(faSpotify, faYoutube, faItunes);
@@ -43,9 +43,8 @@ class App extends Component {
         <Header/>
         <Jumbotron />
         <Feature/>
-        {/*<div className="scroll-down-chevron">Down</div>*/}
         <Music />
-        <Pictures/>
+        {/*<Pictures/>*/}
       </section>
     );
   }
