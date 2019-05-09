@@ -36,7 +36,6 @@ export const Feature = () => (
     <h1>Coming Soon</h1>
     <iframe
       width="90%"
-      maxWidth="520px"
       height="315"
       src="https://www.youtube.com/embed/ic2tGBsZiwg"
       frameBorder="0"
