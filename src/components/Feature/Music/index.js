@@ -7,9 +7,9 @@ export const MusicWrapper = styled.ul`
   display: flex;
   justify-content: space-around;
   list-style: none;
-  max-width: 300px;
+  width: 200px;
   margin: 0 auto;
-  padding: 1em 0 2em;
+  padding: 0 0 2em;
 `;
 
 export const Music = () => (

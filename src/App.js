@@ -7,7 +7,6 @@ import { faSpotify, faYoutube, faItunes } from '@fortawesome/free-brands-svg-ico
 // components
 import { Header } from "./components/Header";
 import { Jumbotron } from "./components/Jumbotron";
-import { Music } from "./components/Music";
 // import {Pictures} from "./components/Pictures";
 import {Feature} from "./components/Feature";
 
@@ -43,7 +42,6 @@ class App extends Component {
         <Header/>
         <Jumbotron />
         <Feature/>
-        <Music />
         {/*<Pictures/>*/}
       </section>
     );
