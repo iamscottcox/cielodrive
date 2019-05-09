@@ -1,6 +1,7 @@
 import React from 'react';
-
 import styled from 'styled-components';
+import {FaChevronDown} from 'react-icons/fa';
+
 import { Logo } from '../Logo';
 
 const JumbtronLogo = styled(Logo)`
@@ -25,14 +26,24 @@ const StyledJumbotron = styled.section`
   justify-content: center;
   font-size: calc(15px + 2vmin);
   color: #333;
+  position: relative;
   
   p {
     font-family: 'Staatliches', sans-serif;
   }
 `;
 
+const StyledChevron = styled.a`
+  position: absolute;
+  margin: auto;
+  bottom: 10px;
+`;
+
 export const Jumbotron = () => (
   <StyledJumbotron>
     <JumbtronLogo />
+    <StyledChevron href="#feature">
+      <FaChevronDown color='#333' />
+    </StyledChevron>
   </StyledJumbotron>
 );
