@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {ACCENT_COLOUR_BRIGHT} from "../../constants/colours";
 
 export const StyledFeature = styled.div`
   min-height: 100vh;
@@ -9,8 +10,9 @@ export const StyledFeature = styled.div`
   flex-direction: column;
   
   h1 {
-    padding: 0.5em;
+    margin-bottom: 0.5em;
     font-size: 3em;
+    border-bottom: 3px solid ${ACCENT_COLOUR_BRIGHT}
   }
   
   h2 {
@@ -21,20 +23,26 @@ export const StyledFeature = styled.div`
   iframe {
     height: 65vh;
     width: 65%;
+    
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      height: 320px;
+    }
   }
 `;
 
 export const Feature = () => (
-  <StyledFeature>
+  <StyledFeature id="feature">
     <h1>Coming Soon</h1>
     <iframe
-      width="560"
+      width="90%"
+      maxWidth="520px"
       height="315"
       src="https://www.youtube.com/embed/ic2tGBsZiwg"
       frameBorder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
     />
-    <h2>25th May 2019</h2>
+    <h2>May 17th 2019</h2>
   </StyledFeature>
 );
