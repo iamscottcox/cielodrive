@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const MusicWrapper = styled.ul`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
   max-width: 300px;
   margin: 0 auto;
@@ -14,8 +14,8 @@ export const MusicWrapper = styled.ul`
 
 export const Music = () => (
     <MusicWrapper>
-      <li><a href="#"><FontAwesomeIcon icon={['fab', 'youtube']} size="3x" color={'#333'}/></a></li>
-      <li><a href="#"><FontAwesomeIcon icon={['fab', 'spotify']} size="3x" color={'#333'}/></a></li>
-      <li><a href="#"><FontAwesomeIcon icon={['fab', 'itunes']} size="3x" color={'#333'}/></a></li>
+      <li><a href="https://www.youtube.com/user/scoutkillers"><FontAwesomeIcon icon={['fab', 'youtube']} size="3x" color={'#333'}/></a></li>
+      <li><a href="https://open.spotify.com/artist/5ktJwzGswi9ZGB5FZDBFdI"><FontAwesomeIcon icon={['fab', 'spotify']} size="3x" color={'#333'}/></a></li>
+      {/*<li><a href="#"><FontAwesomeIcon icon={['fab', 'itunes']} size="3x" color={'#333'}/></a></li>*/}
     </MusicWrapper>
 );
