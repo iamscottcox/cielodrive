@@ -15,6 +15,7 @@ const pictures = [
 export const StyledPictures = styled.div`
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 `;
 
 export const Pictures = () => (
