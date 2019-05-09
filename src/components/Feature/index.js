@@ -35,8 +35,6 @@ export const Feature = () => (
   <StyledFeature id="feature">
     <h1>Coming Soon</h1>
     <iframe
-      width="90%"
-      height="315"
       title="Video for Rise by Cielo Drive"
       src="https://www.youtube.com/embed/ic2tGBsZiwg"
       frameBorder="0"
