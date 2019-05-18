@@ -12,7 +12,7 @@ const StyledNews = styled.div`
   text-align: center;
   justify-content: center
   align-items: center
-  padding-bottom: 5em;
+  padding: 5em 0;
   
   h1 {
     display: inline-block;
@@ -21,8 +21,9 @@ const StyledNews = styled.div`
   }
 
   img {
-    auto: 70%;
-    height: 70vh;
+    width: 90%;
+    max-width: 450px;
+    height: auto;
     margin: 0 auto;
     box-shadow: ${BOX_SHADOW}
   }

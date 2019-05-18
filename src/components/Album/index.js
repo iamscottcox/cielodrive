@@ -17,8 +17,9 @@ const StyledAlbum = styled.div`
     text-align: center;
     
     img {
-      width: 300px
-      height: 300px;
+      width: 90%;
+      max-width: 300px
+      height: auto;
     }
   }
   
@@ -38,6 +39,11 @@ const StyledAlbum = styled.div`
       text-align: center;
     }
   }
+  
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  
 `;
 
 export const Album = props => (

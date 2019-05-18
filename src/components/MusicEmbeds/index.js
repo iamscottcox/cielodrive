@@ -1,17 +1,22 @@
 import React from "react";
 import propTypes from "prop-types";
 import styled from "styled-components";
-import {BOX_SHADOW} from "../../constants/styles/box-shadow";
+import { BOX_SHADOW } from "../../constants/styles/box-shadow";
 
 const StyledMusicEmbeds = styled.div`
   .music-embeds-content {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   iframe {
     margin: 1em;
-    box-shadow: ${BOX_SHADOW}
+    box-shadow: ${BOX_SHADOW};
   }
 `;
 
@@ -23,9 +28,8 @@ export const MusicEmbeds = () => (
         frameBorder="0"
         height="450"
         style={{
-          width: "400px",
+          maxWidth: "400px",
           height: "380px",
-          maxWidth: "660px",
           overflow: "hidden",
           background: "transparent"
         }}
@@ -34,7 +38,7 @@ export const MusicEmbeds = () => (
       />
       <iframe
         src="https://open.spotify.com/embed/album/6q2yFwMIgkqtEFrjTReTXk"
-        width="400"
+        maxWidth="400"
         height="380"
         frameBorder="0"
         allowTransparency="true"
