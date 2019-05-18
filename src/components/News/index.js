@@ -12,7 +12,7 @@ const StyledNews = styled.div`
   text-align: center;
   justify-content: center
   align-items: center
-  padding: 5em 0;
+  padding-bottom: 5em;
   
   h1 {
     display: inline-block;

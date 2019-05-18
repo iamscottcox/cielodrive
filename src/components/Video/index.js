@@ -11,6 +11,7 @@ export const StyledVideo = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 5em 0;
 
   h1 {
     border-bottom: ${BORDER_BOTTOM_ACCENT_COLOUR_BRIGHT}
