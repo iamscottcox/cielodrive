@@ -7,6 +7,7 @@ export const StyledHeader = styled.header`
   padding: 1em;
   background: rgba(255, 255, 255, 0.5);
   z-index: 100;
+  box-shadow: 0px 1p 2px rgba(0, 0, 0, 0.65);
   
   ul {
     display: flex;

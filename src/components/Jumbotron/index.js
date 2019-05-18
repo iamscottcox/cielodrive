@@ -42,7 +42,7 @@ const StyledChevron = styled.a`
 export const Jumbotron = () => (
   <StyledJumbotron>
     <JumbtronLogo />
-    <StyledChevron href="#feature">
+    <StyledChevron href="#album">
       <FaChevronDown color='#333' />
     </StyledChevron>
   </StyledJumbotron>
