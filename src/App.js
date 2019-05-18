@@ -15,6 +15,7 @@ import { Video } from "./components/Video";
 import Pictures from "./components/Pictures";
 import { Album } from "./components/Album";
 import {MusicEmbeds} from "./components/MusicEmbeds";
+import {News} from "./components/News";
 
 library.add(faSpotify, faYoutube, faItunes);
 
@@ -23,11 +24,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-
-  @font-face {
-    font-family: Ailerons;
-    src: url('/public/fonts/Ailerons-Typeface.otf');
   }
   
   body {
@@ -73,6 +69,7 @@ class App extends Component {
           <MusicEmbeds/>
           <Video />
           {/*<Pictures />*/}
+          <News/>
         </StyledContent>
       </section>
     );

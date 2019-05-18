@@ -26,8 +26,8 @@ export const StyledVideo = styled.div`
   }
 
   iframe {
-    height: 65vh;
-    width: 65%;
+    height: 70vh;
+    width: 70%;
     // box-shadow: ${BOX_SHADOW}
 
     @media screen and (max-width: 768px) {
